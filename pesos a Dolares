@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace tipoCambio
+{
+	/// <summary>
+	/// Description of MainForm.
+	/// </summary>
+	public partial class MainForm : Form
+	{
+		public MainForm()
+		{
+			InitializeComponent();
+			
+			
+		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+	
+            double d, p, c;
+            if (textBox1.Text==""&&textBox2.Text=="")
+            	MessageBox.Show("Campo vacio ");
+           
+
+            d = System.Double.Parse(textBox1.Text);
+            p = System.Double.Parse(textBox2.Text);
+
+            
+
+            c =  d/p;
+
+       
+
+            textBox3.Text = c.ToString();	
+            return;
+		
+	
+
+		}
+	}
+}
